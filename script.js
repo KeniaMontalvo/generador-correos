@@ -41,3 +41,21 @@ function generarCorreo() {
     document.execCommand("copy");
     mostrarAdvertencia(advertenciaCopy, "✓ Texto copiado al portapapeles");
   }
+
+  function limpiarCampos() {
+    // Limpiar inputs
+    document.getElementById("nombre").value = "";
+    document.getElementById("monto").value = "";
+    document.getElementById("producto").value = "";
+    document.getElementById("saldo").value = "";
+    document.getElementById("metodo").value = "";
+    document.getElementById("pedido").value = "";
+    document.getElementById("link").value = "";
+    
+    // Limpiar resultado y mensajes
+    document.getElementById("resultado").value = "";
+    resetearMensajes();
+    
+    // Opcional: Dar foco al primer campo
+    document.getElementById("nombre").focus();
+  }
