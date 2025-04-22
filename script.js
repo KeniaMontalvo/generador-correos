@@ -4,9 +4,9 @@ function generarCorreo() {
     const saldo = document.getElementById("saldo").value;
     const metodo = document.getElementById("metodo").value;
     const pedido = document.getElementById("pedido").value;
-    const link = document.getElementById("link").value;
+    //const link = document.getElementById("link").value;
 
-    const texto = `¡Confirmo de recibido! 💚\n\nAbono: $${monto}\nProducto: ${producto}\nEstado: Restante por liquidar $${saldo}\n\nMétodo de entrega: ${metodo}.\n\nPedido #${pedido} ${link}\n\n¡Muchas gracias por la confianza! 🥰`;
+    const texto = `¡Confirmo de recibido! 💚\n\nAbono: $${monto}\nProducto: ${producto}\nEstado: Restante por liquidar $${saldo}\n\nMétodo de entrega: ${metodo}.\n\nPedido #${pedido} https://goo.su/RnHW \n\n¡Muchas gracias por la confianza! 🥰`;
     document.getElementById("resultado").value = texto;
   }
 
