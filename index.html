@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Correos</title>
+</head>
+<body>
+    <h1>Generador de Correos</h1>
+  
+  <div class="form-group">
+    <label for="monto">Abono ($):</label>
+    <input type="text" id="monto" placeholder="Ej. 390.00">
+  </div>
+  
+  <div class="form-group">
+    <label for="producto">Producto:</label>
+    <input type="text" id="producto" placeholder="Ej. TWICE - STRATEGY Ver. Step 4">
+  </div>
+  
+  <div class="form-group">
+    <label for="saldo">Saldo pendiente ($):</label>
+    <input type="text" id="saldo" placeholder="Ej. 00.00">
+  </div>
+  
+  <div class="form-group">
+    <label for="metodo">Método de entrega:</label>
+    <input type="text" id="metodo" placeholder="Ej. Personal/Envío">
+  </div>
+  
+  <div class="form-group">
+    <label for="pedido">Número de pedido:</label>
+    <input type="text" id="pedido" placeholder="Ej. 900">
+  </div>
+  
+  <div class="form-group">
+    <label for="link">Link de seguimiento:</label>
+    <input type="text" id="link" placeholder="Ej. https://cutt.ly/RjuK3S4">
+  </div>
+  
+  <button onclick="generarCorreo()">Generar correo</button>
+  
+  <div class="form-group">
+    <label for="resultado">Texto generado:</label>
+    <textarea id="resultado" rows="8" readonly></textarea>
+    <button onclick="copiarTexto()" class="copy-btn">Copiar texto</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
