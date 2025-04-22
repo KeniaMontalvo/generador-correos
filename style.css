@@ -52,3 +52,10 @@ body {
   .copy-btn:hover {
     background-color: #0b7dda;
   }
+
+  p.advertencia{
+    font-size: 11px;
+    color: rgb(0, 89, 255);
+    margin: 0;
+    font-style: italic;
+}

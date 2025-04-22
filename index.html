@@ -10,6 +10,11 @@
     <h1>Generador de Correos</h1>
   
   <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Ej. Kevin">
+  </div>
+
+  <div class="form-group">
     <label for="monto">Abono ($):</label>
     <input type="text" id="monto" placeholder="Ej. 390.00">
   </div>
@@ -45,6 +50,7 @@
     <label for="resultado">Texto generado:</label>
     <textarea id="resultado" rows="8" readonly></textarea>
     <button onclick="copiarTexto()" class="copy-btn">Copiar texto</button>
+    <p class="advertencia" id="advertenciaCopy"></p>
   </div>
 
   <script src="script.js"></script>
